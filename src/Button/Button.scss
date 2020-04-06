@@ -1,0 +1,44 @@
+@import '../styles/variables';
+
+.button {
+  padding: 12px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    opacity: 0.4;
+  }
+
+  &.primary {
+    color: $primary-color-reverse;
+    background: $primary-color;
+  }
+
+  &.secondary {
+    color: $secondary-color-reverse;
+    background: $secondary-color;
+  }
+
+  &.success {
+    color: $success-color-reverse;
+    background: $success-color;
+  }
+
+  &.danger {
+    color: $danger-color-reverse;
+    background: $danger-color;
+  }
+
+  &.warning {
+    color: $warning-color-reverse;
+    background: $warning-color;
+  }
+
+  &.info {
+    color: $info-color-reverse;
+    background: $info-color;
+  }
+}
