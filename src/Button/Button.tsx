@@ -1,5 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
+import React from 'react';
 import './Button.scss';
 
 export type Colors =
@@ -11,10 +11,10 @@ export type Colors =
   | 'info';
 
 interface Props {
-  /** Button color */
-  color: Colors;
   /** Children */
   children: React.ReactNode;
+  /** Button color */
+  color?: Colors;
   /** Button type */
   type?: 'button' | 'submit' | 'reset';
   /** Callback */
@@ -32,7 +32,7 @@ const Button = ({
 }: Props) => (
   <button
     type={type}
-    className={classNames('button', color)}
+    className={classNames('button', color, { disabled })}
     onClick={onClick}
     disabled={disabled}
   >
