@@ -2,6 +2,7 @@
 
 [![codecov](https://codecov.io/gh/williamnerdy/open-design-system/branch/master/graph/badge.svg)](https://codecov.io/gh/williamnerdy/open-design-system)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=williamnerdy_open-design-system&metric=alert_status)](https://sonarcloud.io/dashboard?id=williamnerdy_open-design-system)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=williamnerdy/open-design-system)](https://dependabot.com)
 
 ## Estrutura dos componentes
 
