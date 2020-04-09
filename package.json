@@ -15,7 +15,8 @@
     "coverage": "jest --coverage",
     "clear": "rimraf build/*",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "classnames": "^2.2.6"
@@ -38,6 +39,7 @@
     "@types/react-dom": "^16.9.6",
     "babel-jest": "^25.2.6",
     "babel-loader": "^8.1.0",
+    "coveralls": "^3.0.11",
     "jest": "^25.2.7",
     "jest-css-modules-transform": "^4.0.0",
     "jest-sonar-reporter": "^2.0.0",
@@ -62,22 +64,5 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16"
-  },
-  "jest": {
-    "testResultsProcessor": "jest-sonar-reporter",
-    "collectCoverageFrom": [
-      "src/**/*.tsx",
-      "!src/**/*.stories.tsx"
-    ],
-    "transform": {
-      ".(ts|tsx)": "ts-jest",
-      ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform"
-    },
-    "testRegex": "\\.spec\\.(ts|tsx)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ]
   }
 }
