@@ -63,6 +63,10 @@
     "react-dom": "^16"
   },
   "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.tsx",
+      "!src/**/*.stories.tsx"
+    ],
     "transform": {
       ".(ts|tsx)": "ts-jest",
       ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform"
