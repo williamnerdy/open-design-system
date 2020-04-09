@@ -40,6 +40,7 @@
     "babel-loader": "^8.1.0",
     "jest": "^25.2.7",
     "jest-css-modules-transform": "^4.0.0",
+    "jest-sonar-reporter": "^2.0.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
@@ -63,6 +64,11 @@
     "react-dom": "^16"
   },
   "jest": {
+    "testResultsProcessor": "jest-sonar-reporter",
+    "collectCoverageFrom": [
+      "src/**/*.tsx",
+      "!src/**/*.stories.tsx"
+    ],
     "transform": {
       ".(ts|tsx)": "ts-jest",
       ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform"
