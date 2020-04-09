@@ -1,8 +1,7 @@
 # [Open Design System](https://williamnerdy.github.io/open-design-system)
 
-![Node.js CI](https://github.com/williamnerdy/open-design-system/workflows/Node.js%20CI/badge.svg)
-![Deploy Storybook to GitHub Pages](https://github.com/williamnerdy/open-design-system/workflows/Deploy%20Storybook%20to%20GitHub%20Pages/badge.svg)
-![Sonar](https://github.com/williamnerdy/open-design-system/workflows/Sonar/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/williamnerdy/open-design-system/badge.svg)](https://coveralls.io/github/williamnerdy/open-design-system)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=williamnerdy_open-design-system&metric=alert_status)](https://sonarcloud.io/dashboard?id=williamnerdy_open-design-system)
 
 ## Estrutura dos componentes
 
