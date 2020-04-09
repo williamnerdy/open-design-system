@@ -25,6 +25,11 @@ jobs:
       - name: Run coverage test
         run: npm run coverage
 
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.DEPLOY_TOKEN }}
+
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarcloud-github-action@master
         env:
