@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Collumn /> Responsive sizes should render with lg 1 size 1`] = `
+<DocumentFragment>
+  <div
+    class="col lg-1"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> Responsive sizes should render with md 1 size 1`] = `
+<DocumentFragment>
+  <div
+    class="col md-1"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> Responsive sizes should render with sm 1 size 1`] = `
+<DocumentFragment>
+  <div
+    class="col sm-1"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align and size should render with align center and size 6 lg 1`] = `
+<DocumentFragment>
+  <div
+    class="col lg-center lg-6"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align and size should render with align center and size 6 md 1`] = `
+<DocumentFragment>
+  <div
+    class="col md-center md-6"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align and size should render with align center and size 6 sm 1`] = `
+<DocumentFragment>
+  <div
+    class="col sm-center sm-6"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align by size should render with align center lg 1`] = `
+<DocumentFragment>
+  <div
+    class="col lg-center"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align by size should render with align center lg 2`] = `
+<DocumentFragment>
+  <div
+    class="col lg-center"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align by size should render with align center md 1`] = `
+<DocumentFragment>
+  <div
+    class="col md-center"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align by size should render with align center md 2`] = `
+<DocumentFragment>
+  <div
+    class="col md-center"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align by size should render with align center sm 1`] = `
+<DocumentFragment>
+  <div
+    class="col sm-center"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align by size should render with align center sm 2`] = `
+<DocumentFragment>
+  <div
+    class="col sm-center"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align should render with align center 1`] = `
+<DocumentFragment>
+  <div
+    class="col align-center"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align should render with align left 1`] = `
+<DocumentFragment>
+  <div
+    class="col align-left"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> align should render with align right 1`] = `
+<DocumentFragment>
+  <div
+    class="col align-right"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> should render with 1 size 1`] = `
+<DocumentFragment>
+  <div
+    class="col size-1"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> should render with 6 size 1`] = `
+<DocumentFragment>
+  <div
+    class="col size-6"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> should render with 12 size 1`] = `
+<DocumentFragment>
+  <div
+    class="col size-12"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Collumn /> should render without prop 1`] = `
+<DocumentFragment>
+  <div
+    class="col"
+  >
+    Collumn content
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.col {
+  display: block;
+
+  @for $i from 1 through $grid-collumns {
+    &.size-#{$i} {
+      width: percentage($i / $grid-collumns);
+    }
+  }
+
+  &.align-left {
+    align-self: flex-start;
+  }
+
+  &.align-center {
+    align-self: center;
+  }
+
+  &.align-right {
+    align-self: end;
+  }
+}
