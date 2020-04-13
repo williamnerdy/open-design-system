@@ -25,7 +25,7 @@ describe('<Row />', () => {
 
     it('should render with align in bottom', () => {
       const { asFragment, getByText } = render(
-        render(<Row align="bottom">Row content</Row>)
+        <Row align="bottom">Row content</Row>
       );
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('align-bottom')).toBe(
@@ -78,7 +78,7 @@ describe('<Row />', () => {
   describe('Justify by size', () => {
     it('should render with justify center sm', () => {
       const { asFragment, getByText } = render(
-        <Row sm="center">{contentRow}</Row>
+        <Row sm={{ justify: 'center' }}>{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('sm-center')).toBe(true);
@@ -86,7 +86,7 @@ describe('<Row />', () => {
 
     it('should render with justify center md', () => {
       const { asFragment, getByText } = render(
-        <Row md="center">{contentRow}</Row>
+        <Row md={{ justify: 'center' }}>{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('md-center')).toBe(true);
@@ -94,7 +94,7 @@ describe('<Row />', () => {
 
     it('should render with justify center lg', () => {
       const { asFragment, getByText } = render(
-        <Row lg="center">{contentRow}</Row>
+        <Row lg="middle">{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('lg-center')).toBe(true);

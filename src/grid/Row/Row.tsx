@@ -1,13 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
 
-type Aligns = 'left' | 'center' | 'right';
+type Aligns = 'middle' | 'bottom' | 'top';
 
 type Justifies = 'left' | 'center' | 'right';
 
-type Mixed = { align?: Aligns; justify: Justifies };
+type Reverse = true;
 
-type Responsives = Mixed | Aligns;
+type Mixed = { align?: Aligns; justify?: Justifies };
+
+type Responsives = Mixed | Aligns | Reverse;
 
 interface Props {
   /** Children */
@@ -17,7 +19,7 @@ interface Props {
   /** justify */
   justify?: Justifies;
   /** Reverse */
-  reverse: false;
+  reverse?: Reverse;
   /** Small size */
   sm?: Responsives;
   /** Medium size */
