@@ -5,7 +5,7 @@ type Aligns = 'middle' | 'bottom' | 'top';
 
 type Justifies = 'left' | 'center' | 'right';
 
-type Reverse = true;
+type Reverse = true | false;
 
 type Mixed = { align?: Aligns; justify?: Justifies; reverse?: Reverse };
 
@@ -47,8 +47,7 @@ const Row = ({ children, justify, align, reverse, sm, md, lg }: Props) => {
     [`reverse-${reverse}`]: reverse,
     ...getResponsive('sm', sm),
     ...getResponsive('md', md),
-    ...getResponsive('lg', lg),
-    reverse
+    ...getResponsive('lg', lg)
   });
 
   return <div className={classes}>{children}</div>;

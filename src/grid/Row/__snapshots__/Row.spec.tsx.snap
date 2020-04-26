@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Row /> Align row should render with align in bottom 1`] = `
+<DocumentFragment>
+  <div
+    class="row align-bottom"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Align row should render with align in left 1`] = `
+<DocumentFragment>
+  <div
+    class="row align-middle"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Align row should render with align in left 2`] = `
+<DocumentFragment>
+  <div
+    class="row align-top"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of lg should render with lg aling middle 1`] = `
+<DocumentFragment>
+  <div
+    class="row lg-middle"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of lg should render with lg justify center 1`] = `
+<DocumentFragment>
+  <div
+    class="row lg-center"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of lg should render with lg reverse 1`] = `
+<DocumentFragment>
+  <div
+    class="row lg-true"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of md should render with md aling middle 1`] = `
+<DocumentFragment>
+  <div
+    class="row md-middle"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of md should render with md justify center 1`] = `
+<DocumentFragment>
+  <div
+    class="row md-center"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of md should render with md reverse 1`] = `
+<DocumentFragment>
+  <div
+    class="row md-true"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of sm should render with sm aling middle 1`] = `
+<DocumentFragment>
+  <div
+    class="row sm-middle"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of sm should render with sm justify center 1`] = `
+<DocumentFragment>
+  <div
+    class="row sm-center"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Individual responsiveness of sm should render with sm reverse 1`] = `
+<DocumentFragment>
+  <div
+    class="row sm-true"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Justify by size should render with justify center lg 1`] = `
+<DocumentFragment>
+  <div
+    class="row lg-middle"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Justify by size should render with justify center md 1`] = `
+<DocumentFragment>
+  <div
+    class="row md-center"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Justify by size should render with justify center sm 1`] = `
+<DocumentFragment>
+  <div
+    class="row sm-center"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Justify should render with justify center 1`] = `
+<DocumentFragment>
+  <div
+    class="row justify-center"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Justify should render with justify left 1`] = `
+<DocumentFragment>
+  <div
+    class="row justify-left"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Justify should render with justify right 1`] = `
+<DocumentFragment>
+  <div
+    class="row justify-right"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> Reverse row should render with reverse 1`] = `
+<DocumentFragment>
+  <div
+    class="row reverse-true"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> justify, align and reverse should render with justify center, aling middle, lg and reverse 1`] = `
+<DocumentFragment>
+  <div
+    class="row lg-middle lg-center lg-true"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> justify, align and reverse should render with justify center, aling middle, md and reverse 1`] = `
+<DocumentFragment>
+  <div
+    class="row md-middle md-center md-true"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> justify, align and reverse should render with justify center, aling middle, sm and reverse 1`] = `
+<DocumentFragment>
+  <div
+    class="row sm-middle sm-center sm-true"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Row /> should render without prop 1`] = `
+<DocumentFragment>
+  <div
+    class="row"
+  >
+    Row content
+  </div>
+</DocumentFragment>
+`;

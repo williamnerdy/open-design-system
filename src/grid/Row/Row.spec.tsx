@@ -3,7 +3,7 @@ import { cleanup, render } from '@testing-library/react';
 import Row from './Row';
 
 describe('<Row />', () => {
-  const contentRow = 'ContentRow content';
+  const contentRow = 'Row content';
   beforeEach(cleanup);
 
   it('should render without prop', () => {
@@ -78,7 +78,7 @@ describe('<Row />', () => {
   describe('Justify by size', () => {
     it('should render with justify center sm', () => {
       const { asFragment, getByText } = render(
-        <Row sm={{ justify: 'center' }}>{contentRow}</Row>
+        <Row sm="center">{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('sm-center')).toBe(true);
@@ -86,7 +86,7 @@ describe('<Row />', () => {
 
     it('should render with justify center md', () => {
       const { asFragment, getByText } = render(
-        <Row md={{ justify: 'center' }}>{contentRow}</Row>
+        <Row md="center">{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('md-center')).toBe(true);
@@ -97,15 +97,19 @@ describe('<Row />', () => {
         <Row lg="middle">{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
-      expect(getByText(contentRow).classList.contains('lg-center')).toBe(true);
+      expect(getByText(contentRow).classList.contains('lg-middle')).toBe(true);
     });
   });
 
   describe('Reverse row', () => {
     it('should render with reverse', () => {
-      const { asFragment, getByText } = render(<Row reverse>Row content</Row>);
+      const { asFragment, getByText } = render(
+        <Row reverse={true}>Row content</Row>
+      );
       expect(asFragment()).toMatchSnapshot();
-      expect(getByText(contentRow).classList.contains('reverse')).toBe(true);
+      expect(getByText(contentRow).classList.contains('reverse-true')).toBe(
+        true
+      );
     });
   });
 
@@ -119,7 +123,7 @@ describe('<Row />', () => {
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('sm-center')).toBe(true);
       expect(getByText(contentRow).classList.contains('sm-middle')).toBe(true);
-      expect(getByText(contentRow).classList.contains('sm-reverse')).toBe(true);
+      expect(getByText(contentRow).classList.contains('sm-true')).toBe(true);
     });
 
     it('should render with justify center, aling middle, md and reverse', () => {
@@ -131,7 +135,7 @@ describe('<Row />', () => {
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('md-center')).toBe(true);
       expect(getByText(contentRow).classList.contains('md-middle')).toBe(true);
-      expect(getByText(contentRow).classList.contains('md-reverse')).toBe(true);
+      expect(getByText(contentRow).classList.contains('md-true')).toBe(true);
     });
 
     it('should render with justify center, aling middle, lg and reverse', () => {
@@ -143,7 +147,7 @@ describe('<Row />', () => {
       expect(asFragment()).toMatchSnapshot();
       expect(getByText(contentRow).classList.contains('lg-center')).toBe(true);
       expect(getByText(contentRow).classList.contains('lg-middle')).toBe(true);
-      expect(getByText(contentRow).classList.contains('lg-reverse')).toBe(true);
+      expect(getByText(contentRow).classList.contains('lg-true')).toBe(true);
     });
   });
 
@@ -166,10 +170,10 @@ describe('<Row />', () => {
 
     it('should render with sm reverse', () => {
       const { asFragment, getByText } = render(
-        <Row sm="reverse">{contentRow}</Row>
+        <Row sm={{ reverse: true }}>{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
-      expect(getByText(contentRow).classList.contains('sm-reverse')).toBe(true);
+      expect(getByText(contentRow).classList.contains('sm-true')).toBe(true);
     });
   });
 
@@ -192,10 +196,10 @@ describe('<Row />', () => {
 
     it('should render with md reverse', () => {
       const { asFragment, getByText } = render(
-        <Row md="reverse">{contentRow}</Row>
+        <Row md={{ reverse: true }}>{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
-      expect(getByText(contentRow).classList.contains('md-reverse')).toBe(true);
+      expect(getByText(contentRow).classList.contains('md-true')).toBe(true);
     });
   });
 
@@ -218,10 +222,10 @@ describe('<Row />', () => {
 
     it('should render with lg reverse', () => {
       const { asFragment, getByText } = render(
-        <Row lg="reverse">{contentRow}</Row>
+        <Row lg={{ reverse: true }}>{contentRow}</Row>
       );
       expect(asFragment()).toMatchSnapshot();
-      expect(getByText(contentRow).classList.contains('lg-reverse')).toBe(true);
+      expect(getByText(contentRow).classList.contains('lg-true')).toBe(true);
     });
   });
 });
