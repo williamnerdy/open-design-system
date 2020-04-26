@@ -7,9 +7,9 @@ type Justifies = 'left' | 'center' | 'right';
 
 type Reverse = true;
 
-type Mixed = { align?: Aligns; justify?: Justifies };
+type Mixed = { align?: Aligns; justify?: Justifies; reverse?: Reverse };
 
-type Responsives = Mixed | Aligns | Reverse;
+type Responsives = Mixed | Aligns | Reverse | Justifies;
 
 interface Props {
   /** Children */
@@ -37,7 +37,7 @@ const getResponsive = (name: string, val?: Responsives) => {
 };
 
 const Row = ({ children, align, reverse, sm, md, lg }: Props) => {
-  const classes = classNames('col', {
+  const classes = classNames('row', {
     [`align-${align}`]: align,
     ...getResponsive('sm', sm),
     ...getResponsive('md', md),
